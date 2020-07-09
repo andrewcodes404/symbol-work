@@ -1,0 +1,21 @@
+// FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER --
+// FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER --
+// FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER --
+// FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER --
+// FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER -- FOOTER --
+.push-down {
+  flex: 1;
+}
+
+footer {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 3rem;
+
+  @include media-lrg {
+    padding: 4rem 0 3rem;
+  }
+}
