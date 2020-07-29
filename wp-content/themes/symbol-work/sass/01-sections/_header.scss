@@ -11,12 +11,14 @@
 .nav {
   display: flex;
   justify-content: space-between;
-
-  width: 95%;
+  align-items: center;
+  height: 75px;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  max-width: 13 00px;
 
   &__logo {
+    width: 154px;
   }
 
   &__menu {
@@ -25,14 +27,57 @@
 
     li {
       font-size: 17px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 0.88;
       letter-spacing: 2.07px;
       text-align: center;
-      color: #000000;
-      margin: 0 10px;
+      font-weight: 500;
+
+      a {
+        color: black;
+      }
+      margin-right: 40px;
+
+      &:after,
+      &:before {
+        font-size: 20px;
+        font-weight: 800;
+        color: $sky-blue;
+        margin-left: 30px;
+        line-height: 1;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          content: "+";
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          content: "=";
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          margin-right: 10px;
+          content: "(";
+        }
+        &:after {
+          margin-left: 10px;
+          content: ")";
+        }
+      }
+
+      &:nth-child(5) {
+        &:before {
+          margin-right: 10px;
+          content: "(";
+        }
+        &:after {
+          margin-left: 10px;
+          content: ")";
+        }
+      }
     }
   }
 }
@@ -126,7 +171,6 @@
 }
 
 .fa-bars {
-  color: $purple;
 }
 
 .fa-times {
