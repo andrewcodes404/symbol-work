@@ -39,6 +39,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   @include fontSize(95px);
+  margin-bottom: 20px;
 }
 
 h2,
@@ -48,6 +49,7 @@ li {
   font-family: neuzeit-grotesk, sans-serif;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -78,8 +80,15 @@ h5 {
   }
 }
 
+ul {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
 li {
-  @include fontSize(36px);
+  @include fontSize(16px);
+  list-style: circle;
+  list-style-position: inside;
 }
 
 p {

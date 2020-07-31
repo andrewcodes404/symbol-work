@@ -1,5 +1,15 @@
 <?php
 
+
+/**
+ * Register support for Gutenberg wide images in your theme
+ */
+function mytheme_setup() {
+  add_theme_support( 'align-wide' );
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
+
+
 //turn this back to true in prod
 show_admin_bar(false);
 
